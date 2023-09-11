@@ -65,7 +65,29 @@ function Navbar({}: Props) {
         >
           LOGO
         </h2>
-        <div className="btn">
+
+        {/* Links on LG+ */}
+        <div className="hidden lg:block ">
+          <ul className="flex justify-around space-x-10 font-medium">
+            {navLinks.map((navLink) => (
+              <Link key={navLink.index} href={`${navLink.link}`}>
+                <li className="transition duration-300 hover:text-sky-700 2xl:text-lg hover:scale-105">
+                  {navLink.name}
+                </li>
+              </Link>
+            ))}
+          </ul>
+        </div>
+
+        {/* Button and Number on LG+ */}
+        <div className="items-center hidden space-x-4 lg:flex">
+          <p className="px-4 py-3 font-semibold transition duration-300 border-2 border-transparent cursor-pointer hover:border-black hover:bg-white">
+            +000123232
+          </p>
+          <button className="w-32 h-12 font-semibold text-black transition duration-300 border-2 border-black hover:bg-black hover:text-white active:scale-90">
+            Book Now
+          </button>
+        </div>
           <button
             className={`h-12 md:h-14 px-2 transition duration-300 border-2  rounded-md md:w-32 w-28 active:scale-90 ${
               openedDrawer
