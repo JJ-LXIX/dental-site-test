@@ -58,13 +58,15 @@ function Navbar({}: Props) {
         }
         }`}
       >
-        <h2
-          className={`text-lg md:text-2xl font-semibold ${
-            openedDrawer ? "text-white" : "text-black"
-          }`}
-        >
-          LOGO
-        </h2>
+        <Link href="/">
+          <h2
+            className={`text-lg md:text-2xl font-semibold ${
+              openedDrawer ? "text-white" : "text-black"
+            }`}
+          >
+            LOGO
+          </h2>
+        </Link>
 
         {/* Links on LG+ */}
         <div className="hidden lg:block ">
@@ -88,6 +90,7 @@ function Navbar({}: Props) {
             Book Now
           </button>
         </div>
+
         <div className="btn lg:hidden">
           <button
             className={`h-12 md:h-14 px-2 transition duration-300 border-2  rounded-md md:w-32 w-28 active:scale-90 ${
