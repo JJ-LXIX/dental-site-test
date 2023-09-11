@@ -88,6 +88,7 @@ function Navbar({}: Props) {
             Book Now
           </button>
         </div>
+        <div className="btn lg:hidden">
           <button
             className={`h-12 md:h-14 px-2 transition duration-300 border-2  rounded-md md:w-32 w-28 active:scale-90 ${
               openedDrawer
@@ -101,7 +102,10 @@ function Navbar({}: Props) {
             </span>
           </button>
         </div>
-        <div className="w-10 h-10 md:w-14 md:h-14" onClick={handleClick}>
+        <div
+          className="w-10 h-10 md:w-14 md:h-14 lg:hidden"
+          onClick={handleClick}
+        >
           <HamburgerIcon openedDrawer={openedDrawer} />
         </div>
       </div>
