@@ -1,9 +1,9 @@
-import Image from "next/image";
+import HeroSection from "../../components/HeroSection/HeroSection";
 
 export default function Home() {
   return (
-    <main className="">
-      <h2>Hello World </h2>
+    <main className="w-full ">
+      <HeroSection />
     </main>
   );
 }
