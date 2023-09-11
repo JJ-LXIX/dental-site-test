@@ -4,20 +4,24 @@ import HamburgerIcon from "../HamburgerIcon/HamburgerIcon";
 import { Phone } from "lucide-react";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Props = {};
 
 const navLinks = [
   {
     index: 1,
+    link: "about",
     name: "About Us",
   },
   {
     index: 1.5,
+    link: "services",
     name: "Our Services",
   },
   {
     index: 2,
+    link: "contact",
     name: "Contact Us",
   },
 ];
