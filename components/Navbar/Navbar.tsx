@@ -53,8 +53,8 @@ function Navbar({}: Props) {
   return (
     <>
       <div
-        className={`fixed z-50 flex items-center justify-between w-full h-20 md:h-24 px-5  shadow-md ${
-          openedDrawer ? "bg-sky-900" : "bg-white"
+        className={`fixed z-50 flex items-center justify-between w-full h-20 md:h-24 px-5  lg:px-20 xl:px-72  ${
+          openedDrawer ? "bg-sky-900" : "bg-white lg:bg-transparent"
         }
         }`}
       >
