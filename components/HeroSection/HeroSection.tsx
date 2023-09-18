@@ -4,35 +4,42 @@ import HealthCareWorkerIMG from "../../public/images/Healthcare_worker.png";
 import WaveSVG from "../../public/images/lines_svg.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 type Props = {};
 
 export default function HeroSection({}: Props) {
-  const isMobile = window.innerWidth < 768;
+  const [isMobile,setIsmobile]= useState(false);
+  const [textVariants,setTextVariants]= useState({});
+  const [imageVariants,setImageVariants]= useState({});
 
-  let textVariants = {};
-  let imageVariants = {};
+  useEffect(()=>{
+ window.innerWidth < 768 ? setIsmobile(true) : setIsmobile(false)
 
-  if (!isMobile) {
-    textVariants = {
-      initial: { opacity: 0, x: -300 },
-      animate: {
-        opacity: 1,
-        x: 0,
-        transition: { duration: 0.3 },
-      },
+    if(!isMobile) {
+      setTextVariants({
+        initial: { opacity: 0, x: -300 },
+        animate: {
+          opacity: 1,
+          x: 0,
+          transition: { duration: 0.3 },
+        }
+        
+      });
+
+      setImageVariants({
+        initial: { opacity: 0, x: 300 },
+        animate: {
+          opacity: 1,
+          x: 0,
+          transition: { duration: 0.3 },
+        },
+      })
     };
 
-    imageVariants = {
-      initial: { opacity: 0, x: 300 },
-      animate: {
-        opacity: 1,
-        x: 0,
-        transition: { duration: 0.3 },
-      },
-    };
-  }
 
+  },[])
+  
   return (
     <div className="relative min-h-screen w-full">
       {/* Emerald on XL+ screen */}
@@ -43,7 +50,7 @@ export default function HeroSection({}: Props) {
           variants={imageVariants}
           initial="initial"
           animate="animate"
-          className="absolute bottom-0 z-10 min-h-[32rem] min-w-[28rem] 2xl:h-[38rem] 2xl:w-[32rem]"
+          className="hidden xl:block absolute bottom-0 z-10 h-[32rem] w-[28rem] 3xl:w-[34rem] 3xl:h-[40rem]"
         >
           <Image
             src={HealthCareWorkerIMG}
@@ -66,7 +73,7 @@ export default function HeroSection({}: Props) {
           variants={textVariants}
           initial="initial"
           animate="animate"
-          className="flex min-h-[50lvh] w-full flex-col items-start space-y-6 pb-16 pl-4 pr-1 pt-32 md:h-[70vh]  md:w-4/5 md:space-y-7 md:pl-10 lg:h-[65vh] lg:pl-20 lg:pt-40 2xl:h-[85vh]"
+          className="flex min-h-[50lvh] w-full flex-col items-start space-y-6 pb-16 pl-4 pr-1 pt-32 md:h-[70vh]  md:w-4/5 md:space-y-7 md:pl-10 lg:h-[65vh] lg:pl-20 lg:pt-40  2xl:pt-32 3xl:pt-40 2xl:h-[85vh]"
         >
           <h2 className="flex items-center space-x-2 pr-6 font-bold tracking-wider text-zinc-950 md:text-xl md:tracking-normal lg:text-lg lg:text-zinc-700">
             <span>
