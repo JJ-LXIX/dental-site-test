@@ -6,10 +6,10 @@ type Props = {};
 
 export default function HeroSection2({}: Props) {
   return (
-    <div className=" w-full  md:pr-10 lg:block lg:h-screen">
+    <div className=" w-full md:pr-10">
       {/* Hero Image */}
       <div>
-        <div className=" relative h-[60svh] w-full overflow-hidden md:h-[65vh] md:rounded-br-[3rem] lg:h-[90vh] xl:h-[95vh]">
+        <div className=" relative h-[60svh] w-full overflow-hidden md:h-[65vh] md:rounded-br-[3rem] lg:h-[80vh] xl:h-[95vh]">
           <Image
             className=""
             src={DentalOfficeHero}
@@ -20,8 +20,8 @@ export default function HeroSection2({}: Props) {
           />
 
           {/* Hero Text */}
-          <div className="absolute inset-0 z-20 flex items-center  justify-center text-center font-medium text-white lg:inset-auto lg:bottom-[12rem] lg:left-5 lg:text-left xl:bottom-60">
-            <h1 className=" flex flex-col  space-y-5 text-5xl lg:text-[9rem] 2xl:text-[9.5rem] 3xl:text-[10.5rem] 4xl:text-[13rem]">
+          <div className="absolute inset-0 z-20 flex items-center  justify-center text-center font-medium text-white lg:inset-auto lg:bottom-[13rem] lg:left-5 lg:text-left xl:bottom-48 3xl:bottom-24">
+            <h1 className="flex flex-col space-y-5 text-5xl md:text-[6rem] lg:text-[8rem] 2xl:text-[9.5rem] 3xl:text-[10.5rem] 4xl:text-[13rem]">
               <span>CRAFTING </span>
               <span>YOUR SMILES</span>
             </h1>
@@ -31,45 +31,45 @@ export default function HeroSection2({}: Props) {
 
           {/* Transparent gradient  */}
           <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black/40 to-[75%]"></div>
-        </div>
-      </div>
 
-      {/* Hero Subline */}
-      <div>
-        <div className="right-10 z-20 h-32 w-full bg-white p-2 pt-5 text-center md:absolute md:bottom-[34.9svh] md:h-40 md:w-[22rem] md:rounded-tl-3xl md:px-7 md:py-4 md:pt-0 md:text-left lg:bottom-[5vh] lg:h-48 lg:w-[30rem]">
-          <h2 className="text-lg font-semibold  text-zinc-800 md:py-3 md:text-lg xl:text-xl xl:leading-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            Lorem, ipsum dolor accusamus sequi debitis recusandae.
-          </h2>
+          {/* Hero Subline */}
+          <div>
+            <div className="right-0 z-20 h-32 w-full break-words bg-white p-2 pt-5  text-center md:absolute md:bottom-0 md:h-32 md:w-[22rem] md:rounded-tl-3xl md:px-7 md:py-4 md:pt-0 md:text-left lg:h-36 lg:w-[30rem] xl:h-44">
+              <h2 className=" text-center text-lg font-semibold text-zinc-800 md:max-w-full md:py-3 md:text-lg  lg:text-left xl:text-xl xl:leading-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                Lorem, ipsum dolor accusamus sequi debitis recusandae.
+              </h2>
 
-          {/* Bottom /Left SVG */}
-          <svg
-            width="45"
-            height="45"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute bottom-0 hidden md:left-[-12.6%] md:block lg:bottom-9 lg:left-[-9.3%] xl:bottom-0 xl:left-[-9.3%]"
-          >
-            <path
-              d="M40 40V0C40 22.0914 22.0914 40 0 40H40Z"
-              fill="white"
-            ></path>
-          </svg>
-          {/* Top/ Right SVG */}
-          <svg
-            width="45"
-            height="45"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute right-0 hidden md:top-[-27%] md:block lg:top-[-23.2%]"
-          >
-            <path
-              d="M40 40V0C40 22.0914 22.0914 40 0 40H40Z"
-              fill="white"
-            ></path>
-          </svg>
+              {/* Bottom /Left SVG */}
+              <svg
+                width="45"
+                height="45"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute bottom-0 hidden  md:left-[-12.6%] md:block  lg:left-[-9.3%] xl:left-[-9%] 3xl:left-[-9.3%] 4xl:bottom-0"
+              >
+                <path
+                  d="M40 40V0C40 22.0914 22.0914 40 0 40H40Z"
+                  fill="white"
+                ></path>
+              </svg>
+              {/* Top/ Right SVG */}
+              <svg
+                width="45"
+                height="45"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute right-0 hidden md:top-[-27%] md:block lg:top-[-23.2%]"
+              >
+                <path
+                  d="M40 40V0C40 22.0914 22.0914 40 0 40H40Z"
+                  fill="white"
+                ></path>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </div>
