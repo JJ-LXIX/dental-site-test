@@ -14,6 +14,7 @@ export default function HeroSection2({}: Props) {
             className=""
             src={DentalOfficeHero}
             fill
+            priority={true}
             alt="Image of our Dental Office"
             style={{ objectFit: "cover" }}
           />
