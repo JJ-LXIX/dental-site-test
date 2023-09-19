@@ -90,7 +90,7 @@ function FaqSection({}: Props) {
         </motion.div>
 
         {/* Image */}
-        <div className="flex h-screen w-full items-center  justify-start px-5 md:h-[50vh] lg:h-screen">
+        <div className="flex h-screen w-full items-center  justify-start overflow-hidden px-5 md:h-[50vh] lg:h-screen">
           <motion.div
             variants={variants2}
             initial="initial"
