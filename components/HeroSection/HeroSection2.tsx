@@ -1,12 +1,35 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import DentalOfficeHero from "public/images/dental-office.jpg";
+import {
+  useMotionValueEvent,
+  useScroll,
+  useTransform,
+  motion,
+} from "framer-motion";
 
 type Props = {};
 
 export default function HeroSection2({}: Props) {
+  const heroRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    }
+  }, []);
+
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end start"],
+  });
+
+  const yAxis = useTransform(scrollYProgress, [0, 1], [0, -500]);
+
   return (
-    <div className=" w-full md:pr-10">
+    <div ref={heroRef} className="w-full md:pr-10">
       {/* Hero Image */}
       <div>
         <div className=" relative h-[60svh] w-full overflow-hidden md:h-[65vh] md:rounded-br-[3rem] lg:h-[80vh] xl:h-[95vh]">
@@ -21,10 +44,13 @@ export default function HeroSection2({}: Props) {
 
           {/* Hero Text */}
           <div className="absolute inset-0 z-20 flex items-center  justify-center text-center font-medium text-white lg:inset-auto lg:bottom-[13rem] lg:left-5 lg:text-left xl:bottom-48 3xl:bottom-24">
-            <h1 className="flex flex-col space-y-5 text-5xl md:text-[6rem] lg:text-[8rem] 2xl:text-[9.5rem] 3xl:text-[10.5rem] 4xl:text-[13rem]">
+            <motion.h1
+              style={isMobile ? {} : { y: yAxis }}
+              className="flex flex-col space-y-5 text-5xl md:text-[6rem] lg:text-[8rem] 2xl:text-[9.5rem] 3xl:text-[10.5rem] 4xl:text-[13rem]"
+            >
               <span>CRAFTING </span>
               <span>YOUR SMILES</span>
-            </h1>
+            </motion.h1>
           </div>
 
           {/* TODO:HERO CTA BUTTON */}
