@@ -1,11 +1,6 @@
 import "./globals.css";
-
-import { Inter } from "next/font/google";
 import localFont from "next/font/local";
-import Navbar2 from "../../components/Navbar/Navbar2";
 import Navbar from "../../components/Navbar2/Navbar";
-
-// const inter = Inter({ subsets: ["latin"] });
 
 const satoshi = localFont({
   src: [
