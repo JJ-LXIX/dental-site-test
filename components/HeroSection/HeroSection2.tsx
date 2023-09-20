@@ -57,8 +57,8 @@ export default function HeroSection2({ isMobile }: Props) {
           <div>
             <div className="absolute bottom-0 right-0 z-40 h-32 w-full break-words bg-white  p-2 pt-5 text-center md:h-32 md:w-[22rem] md:rounded-tl-3xl md:px-7 md:py-4 md:pt-0 md:text-left lg:h-36 lg:w-[30rem] xl:h-44">
               <h2 className="text-center text-lg font-semibold text-zinc-800 md:max-w-full md:py-3 md:text-lg  lg:text-left xl:text-xl xl:leading-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                Lorem, ipsum dolor accusamus sequi debitis recusandae.
+                "Elevate Your Oral Wellness: Discover the Perfect Blend of
+                Expertise, Technology, and Personalized Care."
               </h2>
 
               {/* Bottom /Left SVG */}
