@@ -38,7 +38,7 @@ function CardComponent({ number }: Props) {
         <h3 className="text-lg font-bold text-sky-700">
           {text[number].headline}
         </h3>
-        <h4 className="max-w-sm text-[1.1rem] text-gray-700">
+        <h4 className="max-w-sm text-[1.1rem] text-gray-950">
           {text[number].subtext}
         </h4>
       </div>
