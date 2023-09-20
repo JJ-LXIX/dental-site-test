@@ -4,7 +4,7 @@ import CustomCursor from "../../../components/CustomCursor/CustomCursor";
 
 type Props = {};
 
-export default function page({}: Props) {
+export default function Page({}: Props) {
   // const [isMobile, setIsMobile] = useState(true);
   const [isSmallScreen, setIsSmallScreen] = useState(true);
   const [mousePosition, setMousePosition] = useState({
