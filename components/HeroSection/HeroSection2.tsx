@@ -9,9 +9,11 @@ import {
   motion,
 } from "framer-motion";
 
-type Props = {};
+type Props = {
+  isMobile: boolean;
+};
 
-export default function HeroSection2({}: Props) {
+export default function HeroSection2({ isMobile }: Props) {
   const heroRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
 
