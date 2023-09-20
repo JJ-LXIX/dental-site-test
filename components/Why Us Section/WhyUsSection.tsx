@@ -61,7 +61,7 @@ function WhyUsSection({}: Props) {
                 <h2 className="text-center text-4xl font-semibold lg:max-w-[90%] lg:text-left lg:text-5xl">
                   Why You Should Choose Our Dental Service?
                 </h2>
-                <h3 className="mt-4 text-black md:max-w-[90%]">
+                <h3 className="mt-4 text-center text-lg text-black md:max-w-[90%] lg:text-left">
                   Discover why our dental service stands out from the rest. From
                   our experienced team to our state-of-the-art equipment, we
                   provide exceptional care for all your dental needs.
@@ -69,13 +69,13 @@ function WhyUsSection({}: Props) {
 
                 {/* Cards */}
                 <div>
-                  <div className="my-6 min-h-[6rem] rounded-3xl border border-zinc-200/70 md:w-[90%] ">
+                  <div className="my-6 min-h-[6rem] rounded-3xl border border-zinc-600/70 md:w-[90%] ">
                     <CardComponent number={0} />
                   </div>
-                  <div className="my-6 min-h-[6rem] rounded-3xl border border-zinc-200/70 md:w-[90%] ">
+                  <div className="my-6 min-h-[6rem] rounded-3xl border border-zinc-600/70 md:w-[90%] ">
                     <CardComponent number={1} />
                   </div>
-                  <div className="my-6 min-h-[6rem] rounded-3xl border border-zinc-200/70 md:w-[90%] ">
+                  <div className="my-6 min-h-[6rem] rounded-3xl border border-zinc-600/70 md:w-[90%] ">
                     <CardComponent number={2} />
                   </div>
                 </div>
