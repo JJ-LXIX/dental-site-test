@@ -58,6 +58,7 @@ function FaqSection({ isMobile, setClickable }: Props) {
                 style={{ objectFit: "cover" }}
                 className="rounded-l-3xl rounded-tr-3xl p-2"
                 placeholder="blur"
+                sizes="(max-width: 768px) 90vw, 50vw"
               />
             </div>
           </div>
@@ -103,6 +104,7 @@ function FaqSection({ isMobile, setClickable }: Props) {
               style={{ objectFit: "cover" }}
               className="rounded-l-3xl rounded-tr-3xl p-2"
               placeholder="blur"
+              sizes="(max-width: 768px) 90vw, 50vw"
             />
           </motion.div>
         </div>

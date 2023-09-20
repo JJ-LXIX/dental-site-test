@@ -45,6 +45,7 @@ function WhyUsSection({ isMobile }: Props) {
                   alt="Image of a woman smiling"
                   className="rounded-r-[5rem] rounded-tl-[5rem] p-2"
                   placeholder="blur"
+                  sizes="(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 40vw"
                 />
               </div>
             </div>
@@ -100,6 +101,7 @@ function WhyUsSection({ isMobile }: Props) {
                 fill
                 alt="Image of a woman smiling"
                 className="rounded-r-[5rem] rounded-tl-[5rem] p-2"
+                sizes="(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 40vw"
                 placeholder="blur"
               />
             </motion.div>
