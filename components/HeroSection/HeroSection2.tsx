@@ -15,13 +15,6 @@ type Props = {
 
 export default function HeroSection2({ isMobile }: Props) {
   const heroRef = useRef(null);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth < 768) {
-      setIsMobile(true);
-    }
-  }, []);
 
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -34,9 +27,9 @@ export default function HeroSection2({ isMobile }: Props) {
     <div ref={heroRef} className="w-full md:pr-10">
       {/* Hero Image */}
       <div>
-        <div className=" relative h-[60svh] w-full overflow-hidden md:h-[65vh] md:rounded-br-[3rem] lg:h-[80vh] xl:h-[95vh]">
+        <div className="relative  h-[60svh] w-full overflow-hidden  md:h-[65vh] md:rounded-br-[3rem] lg:h-[80vh] xl:h-[95vh]">
           <Image
-            className=""
+            className="rounded-b-3xl"
             src={DentalOfficeHero}
             fill
             priority={true}
@@ -45,7 +38,7 @@ export default function HeroSection2({ isMobile }: Props) {
           />
 
           {/* Hero Text */}
-          <div className="absolute inset-0 z-20 flex items-center  justify-center text-center font-medium text-white lg:inset-auto lg:bottom-[13rem] lg:left-5 lg:text-left xl:bottom-48 3xl:bottom-24">
+          <div className="absolute inset-0 z-20 flex items-center justify-center text-center font-medium text-white lg:inset-auto lg:bottom-[13rem] lg:left-5 lg:text-left xl:bottom-48 3xl:bottom-24">
             <motion.h1
               style={isMobile ? {} : { y: yAxis }}
               className="flex flex-col space-y-5 text-5xl md:text-[6rem] lg:text-[8rem] 2xl:text-[9.5rem] 3xl:text-[10.5rem] 4xl:text-[13rem]"
@@ -62,8 +55,8 @@ export default function HeroSection2({ isMobile }: Props) {
 
           {/* Hero Subline */}
           <div>
-            <div className="right-0 z-20 h-32 w-full break-words bg-white p-2 pt-5  text-center md:absolute md:bottom-0 md:h-32 md:w-[22rem] md:rounded-tl-3xl md:px-7 md:py-4 md:pt-0 md:text-left lg:h-36 lg:w-[30rem] xl:h-44">
-              <h2 className=" text-center text-lg font-semibold text-zinc-800 md:max-w-full md:py-3 md:text-lg  lg:text-left xl:text-xl xl:leading-10">
+            <div className="absolute bottom-0 right-0 z-40 h-32 w-full break-words bg-white  p-2 pt-5 text-center md:h-32 md:w-[22rem] md:rounded-tl-3xl md:px-7 md:py-4 md:pt-0 md:text-left lg:h-36 lg:w-[30rem] xl:h-44">
+              <h2 className="text-center text-lg font-semibold text-zinc-800 md:max-w-full md:py-3 md:text-lg  lg:text-left xl:text-xl xl:leading-10">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
                 Lorem, ipsum dolor accusamus sequi debitis recusandae.
               </h2>
