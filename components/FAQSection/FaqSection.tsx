@@ -5,7 +5,7 @@ import Image from "next/image";
 import smilingPatient from "../../public/images/woman-dentist-patient.jpg";
 import { motion } from "framer-motion";
 
-type Props = {};
+type Props = { isMobile: boolean };
 
 const variants = {
   initial: {
@@ -28,13 +28,7 @@ const variants2 = {
   },
 };
 
-function FaqSection({}: Props) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    if (window.innerWidth < 768) {
-      setIsMobile(true);
-    }
-  }, []);
+function FaqSection({ isMobile }: Props) {
   if (isMobile)
     return (
       <div className="w-full rounded-b-[5rem] bg-[#1e1e1e] pb-28 lg:pb-20 lg:pt-10">

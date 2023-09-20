@@ -5,7 +5,7 @@ import SmilingWoman from "../../public/images/whyUs.jpg";
 import CardComponent from "./CardComponent";
 import { motion } from "framer-motion";
 
-type Props = {};
+type Props = { isMobile: boolean };
 
 const variants1 = {
   initial: {
@@ -27,13 +27,7 @@ const variants2 = {
 
 const transition = { ease: "easeInOut", duration: 0.3 };
 
-function WhyUsSection({}: Props) {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    if (window.innerWidth < 768) {
-      setIsMobile(true);
-    }
-  }, []);
+function WhyUsSection({ isMobile }: Props) {
   if (isMobile)
     return (
       <div className="flex w-full items-center bg-white py-14 text-black lg:min-h-screen  lg:py-20">
