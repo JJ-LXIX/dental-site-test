@@ -1,11 +1,14 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import Accordian from "./Accordian";
 import Image from "next/image";
 import smilingPatient from "../../public/images/woman-dentist-patient.jpg";
 import { motion } from "framer-motion";
 
-type Props = { isMobile: boolean };
+type Props = {
+  isMobile: boolean;
+  setClickable: Dispatch<SetStateAction<boolean>>;
+};
 
 const variants = {
   initial: {
@@ -28,10 +31,10 @@ const variants2 = {
   },
 };
 
-function FaqSection({ isMobile }: Props) {
+function FaqSection({ isMobile, setClickable }: Props) {
   if (isMobile)
     return (
-      <div className="w-full rounded-b-[5rem] bg-[#1e1e1e] pb-28 lg:pb-20 lg:pt-10">
+      <div className="w-full rounded-b-[5rem] bg-[#141414] pb-28 lg:pb-20 lg:pt-10">
         {/* Text & FAQ */}
         <div className="mx-auto flex flex-col items-center md:max-w-3xl md:flex-row md:justify-center lg:max-w-6xl xl:mx-auto ">
           <div className="w-full px-5 ">
@@ -42,7 +45,7 @@ function FaqSection({ isMobile }: Props) {
               Find solutions to your dental concerns with our comprehensive FAQ
               section, or Contact Us for more detailed information!
             </h3>
-            <Accordian />
+            <Accordian setClickable={setClickable} />
           </div>
 
           {/* Image */}
@@ -62,7 +65,7 @@ function FaqSection({ isMobile }: Props) {
       </div>
     );
   return (
-    <div className="w-full rounded-b-[5rem] bg-[#1e1e1e] pb-28 lg:pb-20 lg:pt-10">
+    <div className="w-full rounded-b-[5rem] bg-[#141414] pb-28 lg:pb-20 lg:pt-10">
       {/* Text & FAQ */}
       <div className="flex flex-col items-center md:flex-row md:justify-center lg:max-w-6xl xl:mx-auto ">
         <motion.div
@@ -80,7 +83,7 @@ function FaqSection({ isMobile }: Props) {
             Find solutions to your dental concerns with our comprehensive FAQ
             section, or Contact Us for more detailed information!
           </h3>
-          <Accordian />
+          <Accordian setClickable={setClickable} />
         </motion.div>
 
         {/* Image */}
