@@ -72,15 +72,14 @@ export default function ServiceSection({
             {services.map((service) => {
               return (
                 // Services Text
-                <>
-                  <div
-                    key={service.name}
-                    onClick={() => setServiceImage(service.image)}
-                    className="flex h-full w-full items-center border-b-2  border-zinc-200 text-lg text-white"
-                  >
-                    {service.name}
-                  </div>
-                </>
+
+                <div
+                  key={service.name}
+                  onClick={() => setServiceImage(service.image)}
+                  className="flex h-full w-full items-center border-b-2  border-zinc-200 text-lg text-white"
+                >
+                  {service.name}
+                </div>
               );
             })}
           </div>
@@ -98,7 +97,7 @@ export default function ServiceSection({
     );
   } else
     return (
-      <div className="min-h-screen overflow-hidden rounded-t-[5rem] bg-[#151515]">
+      <div className="min-h-screen overflow-hidden rounded-t-[5rem] bg-[#141414]">
         <h2 className="pt-10 text-center text-3xl font-semibold text-white md:text-5xl">
           Our Services
         </h2>
@@ -112,20 +111,19 @@ export default function ServiceSection({
             {services.map((service) => {
               return (
                 // Services Text
-                <>
-                  <div
-                    key={service.name}
-                    onMouseEnter={() => {
-                      setServiceImage(service.image);
-                      setHovered(true);
-                    }}
-                    onMouseLeave={() => setHovered(false)}
-                    className="relative flex h-full w-full items-center justify-between border-b-2  border-zinc-200 text-xl text-white"
-                  >
-                    {service.name}
-                    <div className="text-base text-white">{service.text}</div>
-                  </div>
-                </>
+
+                <div
+                  key={service.name}
+                  onMouseEnter={() => {
+                    setServiceImage(service.image);
+                    setHovered(true);
+                  }}
+                  onMouseLeave={() => setHovered(false)}
+                  className="relative flex h-full w-full items-center justify-between border-b-2  border-zinc-200 text-xl text-white"
+                >
+                  {service.name}
+                  <div className="text-base text-white">{service.text}</div>
+                </div>
               );
             })}
             <AnimatePresence>
