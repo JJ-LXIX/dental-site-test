@@ -9,7 +9,7 @@ import whiteTeeth from "../../public/images/whiteTeeth.jpg";
 import Image, { StaticImageData } from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
-type Props = {};
+type Props = { isMobile: boolean; mousePosition: { x: number; y: number } };
 
 const services = [
   { name: "Comprehensive Care", image: dentistPatient },
@@ -20,38 +20,13 @@ const services = [
   { name: "Emergencies", image: Emergencies },
 ];
 
-export default function ServiceSection({}: Props) {
-  const [isMobile, setIsMobile] = useState(false);
+export default function ServiceSection({ isMobile, mousePosition }: Props) {
   const [serviceImage, setServiceImage] = useState<StaticImageData | string>(
     dentistPatient,
   );
   const [hovered, setHovered] = useState(false);
-  useEffect(() => {
-    if (window.innerWidth < 1024) {
-      setIsMobile(true);
-    }
-  }, []);
 
   // Mouse Move
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
-
-  useEffect(() => {
-    const updateMousePosition = (e: any) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-
-    window.addEventListener("mousemove", updateMousePosition);
-    console.log(mousePosition.x);
-    return () => {
-      window.removeEventListener("mousemove", updateMousePosition);
-    };
-  }, []);
 
   if (isMobile) {
     return (
@@ -115,7 +90,7 @@ export default function ServiceSection({}: Props) {
               {hovered ? (
                 <motion.div
                   initial={{ opacity: 0 }}
-                  transition={{ duration: 0.4 }}
+                  transition={{ duration: 0.3 }}
                   animate={{
                     opacity: 1,
                     x: mousePosition.x - 300,
