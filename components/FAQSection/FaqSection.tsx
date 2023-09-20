@@ -37,14 +37,14 @@ function FaqSection({}: Props) {
   }, []);
   if (isMobile)
     return (
-      <div className="w-full bg-white pb-10 lg:pb-0 lg:pt-10 ">
+      <div className="w-full rounded-b-[5rem] bg-[#1e1e1e] pb-28 lg:pb-20 lg:pt-10">
         {/* Text & FAQ */}
-        <div className="flex flex-col items-center md:flex-row md:justify-center lg:max-w-6xl xl:mx-auto ">
+        <div className="mx-auto flex flex-col items-center md:max-w-3xl md:flex-row md:justify-center lg:max-w-6xl xl:mx-auto ">
           <div className="w-full px-5 ">
-            <h2 className="text-center text-4xl font-semibold text-zinc-800 lg:max-w-md lg:text-5xl">
+            <h2 className="text-center text-4xl font-semibold text-zinc-100 lg:max-w-md lg:text-5xl">
               Frequently Asked Questions for a Healthy Smile.
             </h2>
-            <h3 className="mt-2 text-center text-lg text-sky-800 lg:mt-4 lg:max-w-lg lg:text-lg">
+            <h3 className="mt-2 text-center text-lg text-sky-300 lg:mt-4 lg:max-w-lg lg:text-lg">
               Find solutions to your dental concerns with our comprehensive FAQ
               section, or Contact Us for more detailed information!
             </h3>
@@ -52,8 +52,8 @@ function FaqSection({}: Props) {
           </div>
 
           {/* Image */}
-          <div className="flex h-[40svh] w-full items-center  justify-start px-5 md:h-[50vh] lg:h-screen">
-            <div className="relative h-[100%] w-full overflow-hidden rounded-l-3xl rounded-tr-3xl border-4 border-dashed border-black shadow-lg md:h-[80%]">
+          <div className="mt-10 flex h-[40svh] w-full items-center justify-start  px-5 md:h-[50vh] lg:mt-0 lg:h-screen">
+            <div className="relative h-[100%] w-full overflow-hidden rounded-l-3xl rounded-tr-3xl border-4 border-dashed border-white shadow-lg md:h-[80%]">
               <Image
                 src={smilingPatient}
                 fill
@@ -68,7 +68,7 @@ function FaqSection({}: Props) {
       </div>
     );
   return (
-    <div className="w-full bg-white pb-10 pt-32 lg:pb-0 lg:pt-10 ">
+    <div className="w-full rounded-b-[5rem] bg-[#1e1e1e] pb-28 lg:pb-20 lg:pt-10">
       {/* Text & FAQ */}
       <div className="flex flex-col items-center md:flex-row md:justify-center lg:max-w-6xl xl:mx-auto ">
         <motion.div
@@ -79,10 +79,10 @@ function FaqSection({}: Props) {
           viewport={{ once: true }}
           className="w-full px-5 "
         >
-          <h2 className="text-4xl font-semibold text-zinc-800 lg:max-w-md lg:text-5xl">
+          <h2 className="text-left text-4xl font-semibold text-zinc-100 lg:max-w-md lg:text-5xl">
             Frequently Asked Questions for a Healthy Smile.
           </h2>
-          <h3 className="mt-2 text-lg text-blue-800 lg:mt-4 lg:max-w-lg lg:text-lg">
+          <h3 className="mt-2 text-left text-lg text-sky-300 lg:mt-4 lg:max-w-lg lg:text-lg">
             Find solutions to your dental concerns with our comprehensive FAQ
             section, or Contact Us for more detailed information!
           </h3>
@@ -97,7 +97,7 @@ function FaqSection({}: Props) {
             whileInView="animate"
             transition={{ duration: 0.3, type: "easeOut" }}
             viewport={{ once: true }}
-            className="relative h-[80%] w-full overflow-hidden rounded-l-3xl rounded-tr-3xl border-8 border-dashed border-black shadow-lg"
+            className="relative h-[80%] w-full overflow-hidden rounded-l-3xl rounded-tr-3xl border-8 border-dashed border-white shadow-lg"
           >
             <Image
               src={smilingPatient}
