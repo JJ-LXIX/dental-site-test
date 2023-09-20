@@ -120,7 +120,7 @@ export default function ServiceSection({}: Props) {
                     opacity: 1,
                     x: mousePosition.x - 300,
                     y: mousePosition.y - 400,
-                    rotateZ: (mousePosition.x - 500) * 0.04,
+                    rotateZ: (mousePosition.x - 700) * 0.04,
                   }}
                   exit={{ opacity: 0 }}
                   className="absolute top-0 h-5/6 w-4/6 self-center bg-pink-200 4xl:w-3/6"
