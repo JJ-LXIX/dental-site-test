@@ -66,6 +66,7 @@ export default function ServiceSection({}: Props) {
               return (
                 // Services Text
                 <div
+                  key={service.name}
                   onClick={() => setServiceImage(service.image)}
                   className="flex h-full w-full items-center  border-b-2 border-zinc-200 text-lg text-white"
                 >
