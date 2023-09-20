@@ -23,24 +23,24 @@ function Navbar({}: Props) {
             }
           }}
         >
-          <div className="text-xl font-bold">LOGO</div>
+          <div className="cursor-pointer text-xl font-bold">LOGO</div>
         </Link>
 
-        <div className="hidden items-center justify-around lg:flex lg:w-[50%] xl:w-[40%]">
+        <div className="hidden items-center justify-around lg:flex lg:w-[50%] 2xl:w-[40%]">
           <Link
             href="/about"
-            className="text-xl font-bold  transition-all duration-300 hover:text-purple-300"
+            className="cursor-pointer text-xl font-bold  transition-all duration-300 hover:text-purple-300"
           >
             About
           </Link>
           <Link
             href="/services"
-            className="text-xl font-bold  transition-all duration-300 hover:text-purple-300"
+            className="cursor-pointer text-xl font-bold  transition-all duration-300 hover:text-purple-300"
           >
             Services
           </Link>
           <a href="/#contact" className="text-xl">
-            <button className="flex h-14 w-full items-center justify-center rounded border-2 border-white p-4 transition duration-300 hover:scale-105 hover:bg-black/70 active:scale-95">
+            <button className="flex h-14 w-full cursor-pointer items-center justify-center rounded border-2 border-white p-4 transition duration-300 hover:scale-105 hover:bg-black/70 active:scale-95">
               Contact Us
             </button>
           </a>

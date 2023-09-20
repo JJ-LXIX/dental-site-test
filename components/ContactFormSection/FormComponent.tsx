@@ -69,12 +69,12 @@ function FormComponent({}: Props) {
           name="first_name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="font-semibold text-black">
+              <FormLabel className=" font-semibold text-black">
                 First Name
               </FormLabel>
               <FormControl>
                 <Input
-                  className="border-zinc-200 bg-zinc-100 text-zinc-950 shadow-lg placeholder:text-zinc-400"
+                  className="cursor-pointer border-zinc-200 bg-zinc-100 text-zinc-950 shadow-lg placeholder:text-zinc-500"
                   placeholder="first name "
                   {...field}
                 />
@@ -89,12 +89,12 @@ function FormComponent({}: Props) {
           name="last_name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="font-semibold text-black">
+              <FormLabel className=" font-semibold text-black">
                 Last Name
               </FormLabel>
               <FormControl>
                 <Input
-                  className="border-zinc-200 bg-zinc-100  text-zinc-950 shadow-lg placeholder:text-zinc-400"
+                  className="cursor-pointer border-zinc-200 bg-zinc-100  text-zinc-950 shadow-lg placeholder:text-zinc-500"
                   placeholder="last name"
                   {...field}
                 />
@@ -109,10 +109,10 @@ function FormComponent({}: Props) {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="font-semibold text-black">Email</FormLabel>
+              <FormLabel className=" font-semibold text-black">Email</FormLabel>
               <FormControl>
                 <Input
-                  className="border-zinc-200 bg-zinc-100 text-zinc-950 shadow-lg placeholder:text-zinc-400"
+                  className="cursor-pointer border-zinc-200 bg-zinc-100 text-zinc-950 shadow-lg placeholder:text-zinc-500"
                   placeholder="email"
                   {...field}
                 />
@@ -127,12 +127,12 @@ function FormComponent({}: Props) {
           name="phone_number"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="font-semibold text-black">
+              <FormLabel className=" font-semibold text-black">
                 Phone Number
               </FormLabel>
               <FormControl>
                 <Input
-                  className="border-zinc-200 bg-zinc-100 text-zinc-950 shadow-lg placeholder:text-zinc-400"
+                  className="cursor-pointer border-zinc-200 bg-zinc-100 text-zinc-950 shadow-lg placeholder:text-zinc-500"
                   placeholder="phone number"
                   {...field}
                 />
@@ -147,14 +147,14 @@ function FormComponent({}: Props) {
           name="message"
           render={({ field }) => (
             <FormItem className="md:col-span-2 ">
-              <FormLabel className="font-semibold text-black">
+              <FormLabel className=" font-semibold text-black">
                 Message
               </FormLabel>
               <FormControl>
                 <Input
                   placeholder="Enter your custom message here"
                   {...field}
-                  className="border-zinc-200 bg-zinc-100 py-10 text-zinc-950 shadow-lg placeholder:text-zinc-400"
+                  className="cursor-pointer border-zinc-200 bg-zinc-100 py-10 text-zinc-950 shadow-lg placeholder:text-zinc-500"
                 />
               </FormControl>
               <FormMessage className="text-red-500" />
@@ -162,7 +162,7 @@ function FormComponent({}: Props) {
           )}
         />
         <Button
-          className="justify-self-start  bg-black font-semibold text-white transition-all duration-300 hover:scale-110 active:scale-95"
+          className="justify-self-start  bg-black   font-semibold text-white transition-all duration-300 hover:scale-110 active:scale-95"
           type="submit"
         >
           Submit
