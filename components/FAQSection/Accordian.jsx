@@ -5,9 +5,15 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 
-function Accordian({}) {
+function Accordian({ setClickable }) {
   return (
-    <Accordion type="single" className="mt-5 lg:max-w-lg" collapsible>
+    <Accordion
+      onMouseEnter={() => setClickable(true)}
+      onMouseLeave={() => setClickable(false)}
+      type="single"
+      className="mt-5 lg:max-w-lg"
+      collapsible
+    >
       <AccordionItem className="" value="item-1">
         <AccordionTrigger className="text-left text-lg font-semibold text-zinc-200">
           Can dental procedures be performed painlessly?
