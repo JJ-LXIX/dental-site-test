@@ -7,7 +7,7 @@ import React from "react";
 
 function MapComponent({}) {
   return (
-    <div className="relative mx-auto h-screen w-[80%] overflow-hidden rounded-2xl  border-4 border-black p-2 shadow-lg md:h-[50vh] md:w-full lg:h-[70vh]">
+    <div className="relative mx-auto h-[50svh] w-[80%] overflow-hidden rounded-2xl border-4  border-black p-2 shadow-lg md:h-[50vh]  md:w-full lg:h-[70vh]">
       {/* <Map
         mapLib={maplibregl}
         className="absolute inset-0 p-2 rounded-2xl"
@@ -22,7 +22,7 @@ function MapComponent({}) {
         <NavigationControl position="top-left" />
         <Marker longitude={78.042} latitude={27.173} color="red" />
       </Map> */}
-      <p className="absolute inset-0 flex items-center justify-center bg-sky-100 text-center text-black">
+      <p className="absolute inset-0 flex items-center justify-center bg-white text-center text-black">
         Map Image Here
       </p>
     </div>
