@@ -98,6 +98,7 @@ export default function ServiceSection({}: Props) {
               return (
                 // Services Text
                 <div
+                  key={service.name}
                   onMouseEnter={() => {
                     setServiceImage(service.image);
                     setHovered(true);
