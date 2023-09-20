@@ -1,13 +1,8 @@
 "use client";
 import Image from "next/image";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import DentalOfficeHero from "public/images/dental-office.jpg";
-import {
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-  motion,
-} from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 type Props = {
   isMobile: boolean;
