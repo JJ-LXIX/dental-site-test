@@ -1,8 +1,6 @@
-"use client";
 import "./globals.css";
 import localFont from "next/font/local";
 import Navbar from "../../components/Navbar2/Navbar";
-import { ReactLenis } from "@studio-freight/react-lenis";
 
 const satoshi = localFont({
   src: [
@@ -32,13 +30,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <ReactLenis root>
-        <body className={satoshi.className}>
-          {/* <Navbar2 /> */}
-          <Navbar />
-          {children}
-        </body>
-      </ReactLenis>
+      <body className={satoshi.className}>
+        {/* <Navbar2 /> */}
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
