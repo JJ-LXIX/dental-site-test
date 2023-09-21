@@ -34,7 +34,7 @@ export default function CustomCursor({ mousePosition, clickable }: Props) {
           animate="default"
           transition={{ duration: 0.1 }}
           className={`pointer-events-none fixed  top-0  z-50  
-        h-12 w-12 overflow-hidden rounded-full mix-blend-difference transition-colors duration-300 ${
+        h-14 w-14 overflow-hidden rounded-full mix-blend-difference transition-colors duration-300 ${
           clickable ? "bg-yellow-300" : "bg-white"
         }`}
         ></motion.div>
