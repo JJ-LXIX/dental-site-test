@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ContactFormSection from "../../components/ContactFormSection/ContactFormSection";
 import FaqSection from "../../components/FAQSection/FaqSection";
 import HeroSection2 from "../../components/HeroSection/HeroSection2";
@@ -10,6 +10,7 @@ import CustomCursor from "../../components/CustomCursor/CustomCursor";
 import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
 import useDimension from "@/lib/hooks/useDimension";
 import useMousePosition from "@/lib/hooks/useMousePosition";
+import TeamSection from "../../components/TeamSection/TeamSection";
 
 export default function Home() {
   const { isMobile, isSmallScreen } = useDimension();
@@ -26,6 +27,7 @@ export default function Home() {
           isSmallScreen={isSmallScreen}
           setClickable={setClickable}
         />
+        <TeamSection />
         <FaqSection isMobile={isMobile} setClickable={setClickable} />
         <TestimonialSection />
         <ContactFormSection />
