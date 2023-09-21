@@ -8,40 +8,13 @@ import WhyUsSection from "../../components/Why Us Section/WhyUsSection";
 import { ReactLenis } from "@studio-freight/react-lenis";
 import CustomCursor from "../../components/CustomCursor/CustomCursor";
 import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
+import useDimension from "@/lib/hooks/useDimension";
+import useMousePosition from "@/lib/hooks/useMousePosition";
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(true);
-  const [isSmallScreen, setIsSmallScreen] = useState(true);
+  const { isMobile, isSmallScreen } = useDimension();
   const [clickable, setClickable] = useState(false);
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
-
-  useEffect(() => {
-    if (window.innerWidth > 768) {
-      setIsMobile(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (window.innerWidth > 1280) {
-      setIsSmallScreen(false);
-    } else setIsSmallScreen(true);
-  }, []);
-
-  useEffect(() => {
-    const updateMousePosition = (e: any) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-    window.addEventListener("mousemove", updateMousePosition);
-    return () => {
-      window.removeEventListener("mousemove", updateMousePosition);
-    };
-  }, []);
+  const mousePosition = useMousePosition();
 
   return (
     <main className="w-full">
