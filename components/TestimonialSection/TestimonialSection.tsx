@@ -22,11 +22,6 @@ export default function TestimonialSection({}: Props) {
     [0, dimension.height * 1.25],
   );
   const y4 = useTransform(scrollYProgress, [0, 1], [0, dimension.height * 3.3]);
-
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    console.log("Page scroll: ", latest);
-  });
-
   return (
     <div
       className="flex h-[175vh] gap-[2vw] overflow-hidden bg-[#141414] px-10 pb-20"
