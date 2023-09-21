@@ -7,6 +7,7 @@ import ServiceSection from "../../components/ServiceSection/ServiceSection";
 import WhyUsSection from "../../components/Why Us Section/WhyUsSection";
 import { ReactLenis } from "@studio-freight/react-lenis";
 import CustomCursor from "../../components/CustomCursor/CustomCursor";
+import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(true);
@@ -53,6 +54,7 @@ export default function Home() {
           setClickable={setClickable}
         />
         <FaqSection isMobile={isMobile} setClickable={setClickable} />
+        <TestimonialSection />
         <ContactFormSection />
         {isSmallScreen ? null : (
           <CustomCursor mousePosition={mousePosition} clickable={clickable} />
