@@ -62,7 +62,7 @@ export default function ServiceSection({
 
   if (isSmallScreen) {
     return (
-      <div className="min-h-screen rounded-t-[5rem] bg-[#151515]">
+      <div className="min-h-screen  bg-[#141414]">
         <h2 className="pt-10 text-center text-3xl font-semibold text-white md:text-5xl">
           Our Services
         </h2>
@@ -76,14 +76,14 @@ export default function ServiceSection({
                 <div
                   key={service.name}
                   onClick={() => setServiceImage(service.image)}
-                  className="flex h-full w-full items-center border-b-2  border-zinc-200 text-lg text-white"
+                  className="flex h-full w-full animate-pulse items-center border-b-2 border-zinc-200  text-lg text-white md:w-9/12"
                 >
                   {service.name}
                 </div>
               );
             })}
           </div>
-          <div className="relative h-5/6 w-4/6 self-center ">
+          <div className="relative h-5/6 w-4/6 self-center md:w-5/6 ">
             <Image
               src={serviceImage}
               alt="service images"
@@ -97,7 +97,7 @@ export default function ServiceSection({
     );
   } else
     return (
-      <div className="min-h-screen overflow-hidden rounded-t-[5rem] bg-[#141414]">
+      <div className="min-h-screen overflow-hidden  bg-[#141414]">
         <h2 className="pt-10 text-center text-3xl font-semibold text-white md:text-5xl">
           Our Services
         </h2>
