@@ -11,6 +11,7 @@ import TestimonialSection from "../../components/TestimonialSection/TestimonialS
 import useDimension from "@/lib/hooks/useDimension";
 import useMousePosition from "@/lib/hooks/useMousePosition";
 import TeamSection from "../../components/TeamSection/TeamSection";
+import SmallScreenTestimonial from "../../components/TestimonialSection/SmallScreenTestimonial";
 
 export default function Home() {
   const { isMobile, isSmallScreen } = useDimension();
@@ -29,7 +30,7 @@ export default function Home() {
         />
         <TeamSection />
         <FaqSection isMobile={isMobile} setClickable={setClickable} />
-        <TestimonialSection />
+        {isSmallScreen ? <SmallScreenTestimonial /> : <TestimonialSection />}
         <ContactFormSection />
         {isSmallScreen ? null : (
           <CustomCursor mousePosition={mousePosition} clickable={clickable} />
