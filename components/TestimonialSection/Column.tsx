@@ -4,7 +4,7 @@ import { MotionValue, motion } from "framer-motion";
 
 type Props = { images: number[]; y?: MotionValue<number> };
 
-export default function ({ images, y }: Props) {
+export default function Column({ images, y }: Props) {
   return (
     <motion.div
       className="relative flex h-full w-1/4 min-w-[15rem] flex-col gap-[2vw] 
