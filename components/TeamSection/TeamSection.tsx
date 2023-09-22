@@ -45,7 +45,10 @@ export default function TeamSection({}: Props) {
         <div className="Team__Images flex flex-col items-center gap-5  pt-10 md:mx-8 md:grid md:grid-cols-2 md:grid-rows-2  xl:w-full  xl:justify-items-center xl:gap-4 xl:pt-0">
           {dentists.map((dentist) => {
             return (
-              <div className="h-[60svh] w-10/12  md:h-[50svh] md:w-full  xl:h-[70vh]">
+              <div
+                key={dentist.name}
+                className="h-[60svh] w-10/12  md:h-[50svh] md:w-full  xl:h-[70vh]"
+              >
                 <div className="relative h-5/6 w-full">
                   <Image
                     src={dentist.image}
