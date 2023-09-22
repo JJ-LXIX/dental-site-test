@@ -22,9 +22,8 @@ export default function HeroSection2({ isMobile }: Props) {
     <div ref={heroRef} className="w-full md:pr-10">
       {/* Hero Image */}
       <div>
-        <div className="relative  h-[60svh] w-full overflow-hidden  md:h-[65vh] md:rounded-br-[3rem] lg:h-[80vh] xl:h-[95vh]">
+        <div className="relative  h-[90svh] w-full overflow-hidden  md:h-[65vh] md:rounded-br-[3rem] lg:h-[80vh] xl:h-[95vh]">
           <Image
-            className="rounded-b-3xl"
             src={DentalOfficeHero}
             fill
             priority={true}
@@ -51,7 +50,7 @@ export default function HeroSection2({ isMobile }: Props) {
           {/* Hero Subline */}
           <div>
             <div className="absolute bottom-0 right-0 z-30 h-32 w-full break-words bg-white  p-2 pt-5 text-center md:h-32 md:w-[22rem] md:rounded-tl-3xl md:px-7 md:py-4 md:pt-0 md:text-left lg:h-36 lg:w-[30rem] xl:h-44">
-              <h2 className="text-center text-lg font-semibold text-zinc-800 md:max-w-full md:py-3 md:text-lg  lg:text-left xl:text-xl xl:leading-10">
+              <h2 className="py-3 text-center text-lg font-semibold text-zinc-800 md:max-w-full md:text-lg  lg:text-left xl:text-xl xl:leading-10">
                 "Elevate Your Oral Wellness: Discover the Perfect Blend of
                 Expertise, Technology, and Personalized Care."
               </h2>
@@ -63,7 +62,7 @@ export default function HeroSection2({ isMobile }: Props) {
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute bottom-0 hidden  md:left-[-12.6%] md:block  lg:left-[-9.3%] xl:left-[-9%] 3xl:left-[-9.3%] 4xl:bottom-0"
+                className="absolute -top-[35%] left-0 rotate-90   md:bottom-0 md:left-[-12.6%] md:right-auto md:top-auto md:block md:rotate-0  lg:left-[-9.3%] xl:left-[-9%] 3xl:left-[-9.3%] 4xl:bottom-0"
               >
                 <path
                   d="M40 40V0C40 22.0914 22.0914 40 0 40H40Z"
@@ -77,7 +76,7 @@ export default function HeroSection2({ isMobile }: Props) {
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute right-0 hidden md:top-[-27%] md:block lg:top-[-23.2%]"
+                className="absolute -top-[35%] right-0 md:top-[-27%] md:block lg:top-[-25%]"
               >
                 <path
                   d="M40 40V0C40 22.0914 22.0914 40 0 40H40Z"
