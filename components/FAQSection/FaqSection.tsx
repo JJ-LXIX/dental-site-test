@@ -34,7 +34,10 @@ const variants2 = {
 function FaqSection({ isMobile, setClickable }: Props) {
   if (isMobile)
     return (
-      <div className="w-full  bg-[#141414] pb-28 lg:pb-20 lg:pt-10">
+      <div
+        className="w-full  bg-[#141414] pb-28 lg:pb-20 lg:pt-10"
+        id="faqSection"
+      >
         {/* Text & FAQ */}
         <div className="mx-auto flex flex-col items-center md:max-w-3xl md:flex-row md:justify-center lg:max-w-6xl xl:mx-auto ">
           <div className="w-full px-5 ">
