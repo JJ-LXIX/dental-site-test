@@ -18,11 +18,11 @@ function ContactFormSection({}: Props) {
             Contact Us
           </h2>
           <div className="md: flex w-full items-center justify-around  px-5 md:h-10 xl:mx-auto xl:w-3/4">
-            <h3 className="flex w-full items-center md:text-base">
+            <h3 className="flex w-full items-center font-semibold md:text-base">
               <Phone className="h-full pr-2 font-bold text-black" />
               {`(+1)123456789`}
             </h3>
-            <h3 className="flex w-full items-center md:text-base">
+            <h3 className="flex w-full items-center font-semibold md:text-base">
               <Mail className="h-full pr-2 font-bold text-black" />
               yourEmail@gmail.com
             </h3>
