@@ -33,7 +33,7 @@ export default function FooterSection({}: Props) {
               <h3 className="text-xl font-bold xl:text-2xl xl:font-semibold">
                 YOU CAN FIND US
               </h3>
-              <h3 className="text-xl text-yellow-400  xl:text-2xl">
+              <h3 className="cursor-pointer text-xl  text-yellow-400 xl:text-2xl">
                 email@gmail.com
               </h3>
               <h3 className="text-xl text-yellow-400  xl:text-2xl">
@@ -49,7 +49,7 @@ export default function FooterSection({}: Props) {
               {logos.map((logo) => (
                 <div
                   key={logo.name}
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-800 text-xl text-white xl:text-2xl"
+                  className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-zinc-800 text-xl text-white xl:text-2xl"
                 >
                   {logo.component}
                 </div>
@@ -64,19 +64,19 @@ export default function FooterSection({}: Props) {
                 PAGES
               </h3>
               <Link
-                className="text-xl text-yellow-400 md:text-2xl xl:text-2xl"
+                className="cursor-pointer text-xl text-yellow-400 md:text-2xl xl:text-2xl"
                 href="/"
               >
                 Home
               </Link>
               <Link
-                className="text-xl text-yellow-400 md:text-2xl xl:text-2xl"
+                className="cursor-pointer text-xl text-yellow-400 md:text-2xl xl:text-2xl"
                 href="/about"
               >
                 About
               </Link>
               <Link
-                className="text-xl text-yellow-400 md:text-2xl"
+                className="cursor-pointer text-xl text-yellow-400 md:text-2xl"
                 href="/services"
               >
                 Services
@@ -89,13 +89,13 @@ export default function FooterSection({}: Props) {
               </h3>
               <Link
                 href="/#contact"
-                className="text-xl text-sky-400 md:text-2xl"
+                className="cursor-pointer text-xl text-sky-400 md:text-2xl"
               >
                 Contact
               </Link>
               <Link
                 href="/#faqSection"
-                className="text-xl text-sky-400 md:text-2xl"
+                className="cursor-pointer text-xl text-sky-400 md:text-2xl"
               >
                 FAQ
               </Link>
