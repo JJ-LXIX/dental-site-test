@@ -25,14 +25,14 @@ export default function CustomCursor({ mousePosition, clickable }: Props) {
       <motion.div
         variants={variants1}
         animate="default"
-        transition={{ duration: 0 }}
+        transition={{ duration: 0, type: "tween", ease: "backOut" }}
         className="pointer-events-none fixed  top-0 z-50 h-3 w-3 overflow-hidden rounded-full bg-white mix-blend-difference"
       ></motion.div>
       <AnimatePresence>
         <motion.div
           variants={variants2}
           animate="default"
-          transition={{ duration: 0.1 }}
+          transition={{ duration: 0.2, type: "tween", ease: "backOut" }}
           className={`pointer-events-none fixed  top-0  z-50  
         h-14 w-14 overflow-hidden rounded-full mix-blend-difference transition-colors duration-300 ${
           clickable ? "bg-yellow-300" : "bg-white"
