@@ -1,6 +1,7 @@
 import "./globals.css";
 import localFont from "next/font/local";
 import Navbar from "../../components/Navbar2/Navbar";
+import FooterSection from "../../components/FooterSection/FooterSection";
 
 const satoshi = localFont({
   src: [
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
         {/* <Navbar2 /> */}
         <Navbar />
         {children}
+        <FooterSection />
       </body>
     </html>
   );
