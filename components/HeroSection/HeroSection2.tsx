@@ -5,10 +5,10 @@ import DentalOfficeHero from "public/images/dental-office.jpg";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 type Props = {
-  isMobile: boolean;
+  isSmallScreen: boolean;
 };
 
-export default function HeroSection2({ isMobile }: Props) {
+export default function HeroSection2({ isSmallScreen }: Props) {
   const heroRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -34,7 +34,7 @@ export default function HeroSection2({ isMobile }: Props) {
           {/* Hero Text */}
           <div className="absolute inset-0 z-20 flex items-center justify-center text-center font-medium text-white lg:inset-auto lg:bottom-[13rem] lg:left-5 lg:text-left xl:bottom-48 3xl:bottom-24">
             <motion.h1
-              style={isMobile ? {} : { y: yAxis }}
+              style={isSmallScreen ? {} : { y: yAxis }}
               className="flex flex-col space-y-5 text-5xl md:text-[6rem] lg:text-[8rem] 2xl:text-[9.5rem] 3xl:text-[10.5rem] 4xl:text-[13rem]"
             >
               <span>CRAFTING </span>

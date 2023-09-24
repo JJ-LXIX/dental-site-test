@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <main className="w-full">
       <ReactLenis root>
-        <HeroSection2 isMobile={isMobile} />
+        <HeroSection2 isSmallScreen={isSmallScreen} />
         <WhyUsSection isMobile={isMobile} />
         <ServiceSection
           mousePosition={mousePosition}
