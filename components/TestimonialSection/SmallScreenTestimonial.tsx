@@ -24,7 +24,10 @@ function SmallScreenTestimonial({}: Props) {
       <div className="flex min-h-screen w-full flex-col items-center space-y-2 md:min-h-[30svh] md:flex-row md:justify-around md:space-y-0  md:pb-20">
         {reviews.map((review) => {
           return (
-            <div className="h-[40svh] w-3/4 overflow-hidden rounded-2xl bg-zinc-300 p-5 md:h-[25svh] md:w-[30%]">
+            <div
+              key={review.name}
+              className="h-[40svh] w-3/4 overflow-hidden rounded-2xl bg-zinc-300 p-5 md:h-[25svh] md:w-[30%]"
+            >
               <div className="flex h-full w-full flex-col">
                 {/* Review Text */}
                 <div className="flex h-4/6 w-full items-center p-2 ">
