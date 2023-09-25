@@ -17,8 +17,8 @@ function ContactFormSection({}: Props) {
           <h2 className="pb-4 text-center text-4xl font-semibold text-black lg:text-5xl ">
             Contact Us
           </h2>
-          <div className="md: flex w-full items-center justify-around  px-5 md:h-10 xl:mx-auto xl:w-3/4">
-            <h3 className="flex w-full items-center font-semibold md:text-base">
+          <div className="flex w-full items-center justify-around px-5 md:h-10 lg:mx-auto lg:w-3/4">
+            <h3 className="flex w-full items-center  font-semibold md:text-base">
               <Phone className="h-full pr-2 font-bold text-black" />
               {`(+1)123456789`}
             </h3>
