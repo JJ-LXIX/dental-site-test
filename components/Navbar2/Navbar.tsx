@@ -26,7 +26,7 @@ function Navbar({}: Props) {
           <div className="cursor-pointer text-xl font-bold">LOGO</div>
         </Link>
 
-        <div className="hidden items-center justify-around lg:flex lg:w-[50%] 2xl:w-[40%]">
+        <div className="hidden items-center justify-around  lg:flex lg:w-[55%] xl:w-[45%] 2xl:w-[40%]">
           <Link
             href="/about"
             className="cursor-pointer text-xl font-bold  transition-all duration-300 hover:text-purple-300"
