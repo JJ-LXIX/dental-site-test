@@ -11,13 +11,13 @@ const useDimension = () => {
   };
 
   useEffect(() => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth >= 768) {
       setIsMobile(false);
     }
   }, []);
 
   useEffect(() => {
-    if (window.innerWidth > 1280) {
+    if (window.innerWidth >= 1024) {
       setIsSmallScreen(false);
     } else setIsSmallScreen(true);
   }, []);
