@@ -13,7 +13,7 @@ function Navbar({}: Props) {
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full transition ease transform duration-300 bg-white `;
 
   return (
-    <div className="z-50 flex w-full items-center justify-center">
+    <header className="z-50 flex w-full items-center justify-center">
       <div className="navbar fixed top-5 z-50 flex h-[4rem] w-[90%] items-center justify-between rounded-full border-2  px-6 text-white transition-all duration-300 md:h-[5rem] md:w-[60%] lg:h-[5.5rem] 2xl:w-[60%] 4xl:w-[50%]">
         <Link
           href="/"
@@ -118,7 +118,7 @@ function Navbar({}: Props) {
           </motion.div>
         ) : null}
       </AnimatePresence>
-    </div>
+    </header>
   );
 }
 

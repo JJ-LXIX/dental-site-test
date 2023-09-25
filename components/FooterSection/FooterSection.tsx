@@ -19,7 +19,7 @@ const logos = [
 
 export default function FooterSection({}: Props) {
   return (
-    <div className="min-h-screen w-full bg-[#141414] md:min-h-[60svh] xl:min-h-[40vh] ">
+    <footer className="min-h-screen w-full bg-[#141414] md:min-h-[60svh] xl:min-h-[40vh] ">
       <div className="mx-auto min-h-screen w-full md:min-h-[40svh] xl:max-w-[65%] xl:py-20">
         {/* LOGO */}
         <div className="mx-10 border-b-2  border-b-zinc-300 py-14">
@@ -110,6 +110,6 @@ export default function FooterSection({}: Props) {
           2023 CompanyName. All Rights Reserved
         </p>
       </div>
-    </div>
+    </footer>
   );
 }
