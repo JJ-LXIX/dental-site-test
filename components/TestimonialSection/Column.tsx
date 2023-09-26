@@ -1,10 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import { MotionValue, motion } from "framer-motion";
-import { Quote } from "lucide-react";
 
 type Props = {
-  reviews: { name: string; review: string }[];
+  reviews: { name: string; review: string; image: any }[];
   y?: MotionValue<number>;
 };
 
@@ -31,11 +30,19 @@ export default function Column({ reviews, y }: Props) {
                 "{review.review}"
               </div>
               {/* Image and Name */}
-              <div className="flex h-3/6 w-full flex-col items-center justify-center space-y-4 bg-zinc-100 pt-8">
+              <div className="flex h-3/6 w-full flex-col items-center justify-center space-y-4">
                 <div className="flex h-full w-full items-center justify-center">
-                  <div className="h-24 w-24 rounded-full bg-red-500"></div>
+                  <div className="relative h-36 w-36 overflow-hidden rounded-full bg-red-500">
+                    <Image
+                      src={review.image}
+                      alt="image of person smiling with nice teeth"
+                      style={{ objectFit: "cover" }}
+                      fill
+                      sizes="20vw"
+                    />
+                  </div>
                 </div>
-                <div className="flex h-full w-full justify-center  text-2xl font-bold ">
+                <div className="flex h-full w-full justify-center  text-xl font-bold ">
                   {review.name}
                 </div>
               </div>
