@@ -32,12 +32,13 @@ export default function Column({ reviews, y }: Props) {
               {/* Image and Name */}
               <div className="flex h-3/6 w-full flex-col items-center justify-center space-y-4">
                 <div className="flex h-full w-full items-center justify-center">
-                  <div className="relative h-36 w-36 overflow-hidden rounded-full bg-red-500">
+                  <div className="relative h-36 w-36 overflow-hidden rounded-full bg-black">
                     <Image
                       src={review.image}
                       alt="image of person smiling with nice teeth"
                       style={{ objectFit: "cover" }}
                       fill
+                      placeholder="blur"
                       sizes="20vw"
                     />
                   </div>

@@ -45,13 +45,14 @@ function SmallScreenTestimonial({}: Props) {
                 {/* Image and Name */}
                 <div className="flex h-2/6 w-full md:space-x-2">
                   <div className="flex h-full w-2/6 items-center justify-center">
-                    <div className="relative h-16 w-16 overflow-hidden rounded-full">
+                    <div className="relative h-16 w-16 overflow-hidden rounded-full bg-black">
                       <Image
                         src={review.image}
                         alt="image of person smiling with nice teeth"
                         style={{ objectFit: "cover" }}
                         fill
                         sizes="20vw"
+                        placeholder="blur"
                       />
                     </div>
                   </div>
