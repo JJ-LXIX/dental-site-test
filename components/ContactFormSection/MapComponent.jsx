@@ -23,7 +23,7 @@ function MapComponent({}) {
         <Marker longitude={78.042} latitude={27.173} color="red" />
       </Map> */}
       <p className="absolute inset-0 flex items-center justify-center bg-white text-center text-black">
-        Map Image Here
+        Interactive Map Here
       </p>
     </div>
   );
