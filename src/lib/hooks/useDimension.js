@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import throttle from "lodash.throttle";
 
 const useDimension = () => {
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
@@ -7,26 +8,22 @@ const useDimension = () => {
 
   const updateDimension = () => {
     const { innerWidth, innerHeight } = window;
+    if (innerWidth >= 768) {
+      setIsMobile(false);
+    }
+    if (innerWidth >= 1024) {
+      setIsSmallScreen(false);
+    } else setIsSmallScreen(true);
     setDimension({ width: innerWidth, height: innerHeight });
   };
 
-  useEffect(() => {
-    if (window.innerWidth >= 768) {
-      setIsMobile(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (window.innerWidth >= 1024) {
-      setIsSmallScreen(false);
-    } else setIsSmallScreen(true);
-  }, []);
+  const throttledUpdateDimension = throttle(updateDimension, 500);
 
   useEffect(() => {
     updateDimension();
-    window.addEventListener("resize", updateDimension);
+    window.addEventListener("resize", throttledUpdateDimension);
     return () => {
-      window.removeEventListener("resize", updateDimension);
+      window.removeEventListener("resize", throttledUpdateDimension);
     };
   }, []);
   return { dimension, isMobile, isSmallScreen };
