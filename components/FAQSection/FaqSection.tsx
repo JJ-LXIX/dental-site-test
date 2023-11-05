@@ -52,7 +52,7 @@ function FaqSection({ isMobile, setClickable }: Props) {
           </div>
 
           {/* Image */}
-          <div className="mt-10 flex h-[40svh] w-full items-center justify-start  px-5 md:h-[50vh] lg:mt-0 lg:h-screen">
+          <div className="mt-10 flex h-[40vh] w-full items-center justify-start  px-5 md:h-[50vh] lg:mt-0 lg:h-screen">
             <div className="relative h-[100%] w-full overflow-hidden rounded-l-3xl rounded-tr-3xl border-4 border-dashed border-white shadow-lg md:h-[80%]">
               <Image
                 src={smilingPatient}

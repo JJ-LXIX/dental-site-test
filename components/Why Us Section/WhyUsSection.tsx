@@ -35,7 +35,7 @@ function WhyUsSection({ isMobile }: Props) {
           {/* Adjust width of container */}
           <div className="flex w-full flex-col md:flex-row lg:max-w-6xl ">
             {/* Left Side */}
-            <div className="flex h-[55svh] w-full items-center justify-center md:mt-[5rem] md:h-auto md:items-start lg:mt-0">
+            <div className="flex h-[55vh] w-full items-center justify-center md:mt-[5rem] md:h-auto md:items-start lg:mt-0">
               <div className="relative h-[90%] w-[65%] overflow-hidden rounded-r-[5rem] rounded-tl-[5rem] border-4 border-dashed border-black md:h-[60%]  lg:h-[100%] lg:w-[65%]">
                 <Image
                   src={SmilingWoman}
@@ -51,7 +51,7 @@ function WhyUsSection({ isMobile }: Props) {
             </div>
 
             {/* Right Side */}
-            <div className="flex w-full items-center md:min-h-[70svh] ">
+            <div className="flex w-full items-center md:min-h-[70vh] ">
               <div className=" w-full p-4">
                 <h2 className="text-center text-4xl font-semibold lg:max-w-[90%] lg:text-left lg:text-5xl">
                   Why You Should Choose Our Dental Service?
@@ -86,7 +86,7 @@ function WhyUsSection({ isMobile }: Props) {
         {/* Adjust width of container */}
         <div className="flex w-full flex-col md:flex-row lg:max-w-6xl ">
           {/* Left Side */}
-          <div className="flex h-[55svh] w-full items-center justify-center md:mt-[5rem] md:h-auto md:items-start lg:mt-0 ">
+          <div className="flex h-[55vh] w-full items-center justify-center md:mt-[5rem] md:h-auto md:items-start lg:mt-0 ">
             <motion.div
               variants={variants1}
               initial="initial"
@@ -108,7 +108,7 @@ function WhyUsSection({ isMobile }: Props) {
           </div>
 
           {/* Right Side */}
-          <div className="flex w-full items-center md:min-h-[70svh] ">
+          <div className="flex w-full items-center md:min-h-[70vh] ">
             <motion.div
               variants={variants2}
               initial="initial"

@@ -47,7 +47,7 @@ export default function TeamSection({}: Props) {
             return (
               <div
                 key={dentist.name}
-                className="h-[60svh] w-10/12  md:h-[50svh] md:w-full  xl:h-[70vh]"
+                className="h-[60vh] w-10/12  md:h-[50vh] md:w-full  xl:h-[70vh]"
               >
                 <div className="relative h-5/6 w-full">
                   <Image

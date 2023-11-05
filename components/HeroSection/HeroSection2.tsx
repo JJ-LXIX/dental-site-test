@@ -22,7 +22,7 @@ export default function HeroSection2({ isSmallScreen }: Props) {
     <div ref={heroRef} className="w-full md:pr-10">
       {/* Hero Image */}
       <div>
-        <div className="relative h-[90svh] w-full overflow-hidden md:h-[65vh] md:rounded-br-[3rem] lg:h-[80vh] xl:h-[95vh]">
+        <div className="relative h-[90vh] w-full overflow-hidden md:h-[65vh] md:rounded-br-[3rem] lg:h-[80vh] xl:h-[95vh]">
           <Image
             src={DentalOfficeHero}
             fill

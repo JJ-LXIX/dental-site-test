@@ -7,7 +7,7 @@ import React from "react";
 
 function MapComponent({}) {
   return (
-    <div className="relative mx-auto h-[50svh] w-[80%] overflow-hidden rounded-2xl border-4  border-black p-2 shadow-lg md:h-[50vh]  md:w-full lg:h-[70vh]">
+    <div className="relative mx-auto h-[50vh] w-[80%] overflow-hidden rounded-2xl border-4  border-black p-2 shadow-lg md:h-[50vh]  md:w-full lg:h-[70vh]">
       {/* <Map
         mapLib={maplibregl}
         className="absolute inset-0 p-2 rounded-2xl"

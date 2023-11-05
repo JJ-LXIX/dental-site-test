@@ -29,13 +29,13 @@ type Props = {};
 
 function SmallScreenTestimonial({}: Props) {
   return (
-    <div className="min-h-screen w-full bg-[#141414] pb-10 md:min-h-[30svh] md:pb-20">
-      <div className="flex min-h-screen w-full flex-col items-center space-y-2 md:min-h-[30svh] md:flex-row md:justify-around md:space-y-0  md:pb-20">
+    <div className="min-h-screen w-full bg-[#141414] pb-10 md:min-h-[30vh] md:pb-20">
+      <div className="flex min-h-screen w-full flex-col items-center space-y-2 md:min-h-[30vh] md:flex-row md:justify-around md:space-y-0  md:pb-20">
         {reviews.map((review) => {
           return (
             <div
               key={review.name}
-              className="h-[40svh] w-3/4 overflow-hidden rounded-2xl bg-zinc-100 p-5 md:h-[25svh] md:w-[30%]"
+              className="h-[40vh] w-3/4 overflow-hidden rounded-2xl bg-zinc-100 p-5 md:h-[25vh] md:w-[30%]"
             >
               <div className="flex h-full w-full flex-col">
                 {/* Review Text */}

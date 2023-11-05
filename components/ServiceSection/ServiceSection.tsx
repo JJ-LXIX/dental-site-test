@@ -67,7 +67,7 @@ export default function ServiceSection({
           Our Services
         </h2>
 
-        <div className="mx-auto mt-10 flex h-[80svh] w-full items-center justify-center md:w-5/6">
+        <div className="mx-auto mt-10 flex h-[80vh] w-full items-center justify-center md:w-5/6">
           <div className="bg flex h-4/6 w-11/12 flex-col justify-around px-5">
             {services.map((service) => {
               return (
@@ -102,7 +102,7 @@ export default function ServiceSection({
           Our Services
         </h2>
 
-        <div className="mx-auto mt-10 flex h-[80svh] w-11/12 items-center justify-center 3xl:w-5/6">
+        <div className="mx-auto mt-10 flex h-[80vh] w-11/12 items-center justify-center 3xl:w-5/6">
           <div
             onMouseEnter={() => setClickable(true)}
             onMouseLeave={() => setClickable(false)}
