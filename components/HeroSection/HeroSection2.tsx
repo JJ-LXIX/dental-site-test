@@ -22,7 +22,7 @@ export default function HeroSection2({ isSmallScreen }: Props) {
     <div ref={heroRef} className="w-full md:pr-10">
       {/* Hero Image */}
       <div>
-        <div className="relative  h-[90svh] w-full overflow-hidden  md:h-[65vh] md:rounded-br-[3rem] lg:h-[80vh] xl:h-[95vh]">
+        <div className="relative h-[90svh] w-full overflow-hidden md:h-[65vh] md:rounded-br-[3rem] lg:h-[80vh] xl:h-[95vh]">
           <Image
             src={DentalOfficeHero}
             fill
@@ -33,13 +33,20 @@ export default function HeroSection2({ isSmallScreen }: Props) {
 
           {/* Hero Text */}
           <div className="absolute inset-0 z-20 flex items-center justify-center text-center font-medium text-white lg:inset-auto lg:bottom-[13rem] lg:left-5 lg:text-left xl:bottom-48 3xl:bottom-24">
-            <motion.h1
-              style={isSmallScreen ? {} : { y: yAxis }}
-              className="flex flex-col space-y-5 text-5xl md:text-[6rem] lg:text-[8rem] 2xl:text-[9.5rem] 3xl:text-[10.5rem] 4xl:text-[13rem]"
-            >
-              <span>CRAFTING </span>
-              <span>YOUR SMILES</span>
-            </motion.h1>
+            {isSmallScreen ? (
+              <h1 className="flex flex-col space-y-5 text-7xl md:text-[6rem] lg:text-[8rem] 2xl:text-[9.5rem] 3xl:text-[10.5rem] 4xl:text-[13rem]">
+                <span>CRAFTING </span>
+                <span>YOUR SMILES</span>
+              </h1>
+            ) : (
+              <motion.h1
+                style={{ y: yAxis }}
+                className="flex flex-col space-y-5 text-7xl md:text-[6rem] lg:text-[8rem] 2xl:text-[9.5rem] 3xl:text-[10.5rem] 4xl:text-[13rem]"
+              >
+                <span>CRAFTING </span>
+                <span>YOUR SMILES</span>
+              </motion.h1>
+            )}
           </div>
 
           {/* TODO:HERO CTA BUTTON */}
