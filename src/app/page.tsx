@@ -20,22 +20,22 @@ export default function Home() {
 
   return (
     <main className="w-full">
-      <ReactLenis root>
-        <HeroSection2 isSmallScreen={isSmallScreen} />
-        <WhyUsSection isMobile={isMobile} />
-        <ServiceSection
-          mousePosition={mousePosition}
-          isSmallScreen={isSmallScreen}
-          setClickable={setClickable}
-        />
-        <TeamSection />
-        <FaqSection isMobile={isMobile} setClickable={setClickable} />
-        {isSmallScreen ? <SmallScreenTestimonial /> : <TestimonialSection />}
-        <ContactFormSection />
-        {isSmallScreen ? null : (
-          <CustomCursor mousePosition={mousePosition} clickable={clickable} />
-        )}
-      </ReactLenis>
+      {/* <ReactLenis root> */}
+      <HeroSection2 isSmallScreen={isSmallScreen} />
+      <WhyUsSection isMobile={isMobile} />
+      <ServiceSection
+        mousePosition={mousePosition}
+        isSmallScreen={isSmallScreen}
+        setClickable={setClickable}
+      />
+      <TeamSection />
+      <FaqSection isMobile={isMobile} setClickable={setClickable} />
+      {isSmallScreen ? <SmallScreenTestimonial /> : <TestimonialSection />}
+      <ContactFormSection />
+      {isSmallScreen ? null : (
+        <CustomCursor mousePosition={mousePosition} clickable={clickable} />
+      )}
+      {/* </ReactLenis> */}
     </main>
   );
 }
