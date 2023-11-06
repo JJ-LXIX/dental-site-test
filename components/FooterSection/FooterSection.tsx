@@ -64,19 +64,19 @@ export default function FooterSection({}: Props) {
                 PAGES
               </h3>
               <Link
-                className="cursor-pointer text-xl text-yellow-400 md:text-2xl xl:text-2xl"
+                className="cursor-pointer pb-2 text-xl text-yellow-400 md:text-2xl xl:text-2xl"
                 href="/"
               >
                 Home
               </Link>
               <Link
-                className="cursor-pointer text-xl text-yellow-400 md:text-2xl xl:text-2xl"
+                className="cursor-pointer pb-2 text-xl text-yellow-400 md:text-2xl xl:text-2xl"
                 href="/about"
               >
                 About
               </Link>
               <Link
-                className="cursor-pointer text-xl text-yellow-400 md:text-2xl"
+                className="cursor-pointer pb-2 text-xl text-yellow-400 md:text-2xl"
                 href="/services"
               >
                 Services
@@ -89,13 +89,13 @@ export default function FooterSection({}: Props) {
               </h3>
               <Link
                 href="/#contact"
-                className="cursor-pointer text-xl text-sky-400 md:text-2xl"
+                className="cursor-pointer pb-2 text-xl text-sky-400 md:text-2xl"
               >
                 Contact
               </Link>
               <Link
                 href="/#faqSection"
-                className="cursor-pointer text-xl text-sky-400 md:text-2xl"
+                className="cursor-pointer pb-2 text-xl text-sky-400 md:text-2xl"
               >
                 FAQ
               </Link>
