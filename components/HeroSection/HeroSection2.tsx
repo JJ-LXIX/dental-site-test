@@ -29,6 +29,7 @@ export default function HeroSection2({ isSmallScreen }: Props) {
             priority={true}
             alt="Image of our Dental Office"
             style={{ objectFit: "cover" }}
+            placeholder="blur"
           />
 
           {/* Hero Text */}
