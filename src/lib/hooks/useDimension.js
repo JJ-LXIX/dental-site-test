@@ -7,7 +7,6 @@ const useDimension = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(true);
 
   const updateDimensionInitial = () => {
-    console.log("testing");
     const { innerWidth, innerHeight } = window;
     if (innerWidth >= 768) {
       setIsMobile(false);
