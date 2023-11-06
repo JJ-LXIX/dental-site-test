@@ -58,6 +58,7 @@ export default function TeamSection({}: Props) {
                       objectFit: "cover",
                       objectPosition: dentist.objectPosition,
                     }}
+                    sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 40vw"
                   />
                 </div>
                 <div className="flex h-1/6 w-full flex-col justify-center bg-[#202020] px-2">
