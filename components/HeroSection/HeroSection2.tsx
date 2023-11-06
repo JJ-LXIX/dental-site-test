@@ -19,7 +19,7 @@ export default function HeroSection2({ isSmallScreen }: Props) {
   const yAxis = useTransform(scrollYProgress, [0, 1], [0, -500]);
 
   return (
-    <div ref={heroRef} className="w-full md:pr-10">
+    <div ref={heroRef} className="w-full pb-10 md:pr-10">
       {/* Hero Image */}
       <div>
         <div className="relative h-[90vh] w-full overflow-hidden md:h-[65vh] md:rounded-br-[3rem] lg:h-[80vh] xl:h-[95vh]">
@@ -50,14 +50,12 @@ export default function HeroSection2({ isSmallScreen }: Props) {
             )}
           </div>
 
-          {/* TODO:HERO CTA BUTTON */}
-
           {/* Transparent gradient  */}
           <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black/40 to-[75%]"></div>
 
           {/* Hero Subline */}
           <div>
-            <div className="absolute bottom-0 right-0 z-30 h-32 w-full break-words bg-white  p-2 pt-5 text-center md:h-32 md:w-[22rem] md:rounded-tl-3xl md:px-7 md:py-4 md:pt-0 md:text-left lg:h-36 lg:w-[30rem] xl:h-44">
+            <div className="absolute bottom-0 right-0 z-30 h-32 w-full break-words bg-white p-2 pt-5 text-center md:h-32 md:w-[22rem] md:rounded-tl-3xl md:px-7 md:py-4 md:pt-0 md:text-left lg:h-36 lg:w-[30rem] xl:h-44">
               <h2 className="py-3 text-center text-lg font-semibold text-zinc-800 md:max-w-full md:text-lg  lg:text-left xl:text-xl xl:leading-10">
                 "Elevate Your Oral Wellness: Discover the Perfect Blend of
                 Expertise, Technology, and Personalized Care."
