@@ -17,24 +17,23 @@ const useDimension = () => {
     setDimension({ width: innerWidth, height: innerHeight });
   };
 
-  const updateDimension = () => {
-    const { innerWidth, innerHeight } = window;
-    if (innerWidth >= 768) {
-      setIsMobile(false);
-    }
-    if (innerWidth >= 1024) {
-      setIsSmallScreen(false);
-    } else setIsSmallScreen(true);
-    setDimension({ width: innerWidth, height: innerHeight });
-  };
-
-  const throttledUpdateDimension = throttle(updateDimension, 300);
-
   useEffect(() => {
     updateDimensionInitial();
   }, []);
 
   useEffect(() => {
+    const updateDimension = () => {
+      const { innerWidth, innerHeight } = window;
+      if (innerWidth >= 768) {
+        setIsMobile(false);
+      }
+      if (innerWidth >= 1024) {
+        setIsSmallScreen(false);
+      } else setIsSmallScreen(true);
+      setDimension({ width: innerWidth, height: innerHeight });
+    };
+
+    const throttledUpdateDimension = throttle(updateDimension, 300);
     window.addEventListener("resize", throttledUpdateDimension);
     return () => {
       window.removeEventListener("resize", throttledUpdateDimension);
