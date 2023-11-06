@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={satoshi.className}>
         {/* <Navbar2 /> */}
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
         <FooterSection />
       </body>
