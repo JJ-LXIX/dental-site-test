@@ -40,7 +40,7 @@ export default function Page({}: Props) {
   return (
     <>
       <div className="flex min-h-screen w-full items-center justify-center bg-white text-2xl">
-        About page
+        About page (customized based on your needs)
       </div>
       {isSmallScreen ? null : <CustomCursor mousePosition={mousePosition} />}
     </>
