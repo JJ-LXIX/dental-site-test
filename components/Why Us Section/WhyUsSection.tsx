@@ -41,7 +41,6 @@ function WhyUsSection({ isMobile }: Props) {
                   src={SmilingWoman}
                   style={{ objectFit: "cover" }}
                   fill
-                  priority={true}
                   alt="Image of a woman smiling"
                   className="rounded-r-[5rem] rounded-tl-[5rem] p-2"
                   placeholder="blur"
