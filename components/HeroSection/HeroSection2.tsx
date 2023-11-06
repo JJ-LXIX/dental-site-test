@@ -28,7 +28,6 @@ export default function HeroSection2({ isSmallScreen }: Props) {
             fill
             priority={true}
             alt="Image of our Dental Office"
-            placeholder="blur"
             quality={100}
             style={{ objectFit: "cover" }}
           />
