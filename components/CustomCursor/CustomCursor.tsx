@@ -1,12 +1,13 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import useMousePosition from "@/lib/hooks/useMousePosition";
 
 type Props = {
-  mousePosition: { x: number; y: number };
   clickable?: boolean;
 };
 
-export default function CustomCursor({ mousePosition, clickable }: Props) {
+export default function CustomCursor({ clickable }: Props) {
+  const mousePosition = useMousePosition();
   const variants1 = {
     default: {
       x: mousePosition.x - 5,

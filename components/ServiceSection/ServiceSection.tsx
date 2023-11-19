@@ -8,9 +8,9 @@ import Emergencies from "../../public/images/emergencies.jpg";
 import whiteTeeth from "../../public/images/whiteTeeth.jpg";
 import Image, { StaticImageData } from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
+import useMousePosition from "@/lib/hooks/useMousePosition";
 
 type Props = {
-  mousePosition: { x: number; y: number };
   isSmallScreen: boolean;
   setClickable: Dispatch<SetStateAction<boolean>>;
 };
@@ -48,15 +48,12 @@ const services = [
   },
 ];
 
-export default function ServiceSection({
-  mousePosition,
-  isSmallScreen,
-  setClickable,
-}: Props) {
+export default function ServiceSection({ isSmallScreen, setClickable }: Props) {
   const [serviceImage, setServiceImage] = useState<StaticImageData | string>(
     dentistPatient,
   );
   const [hovered, setHovered] = useState(false);
+  const mousePosition = useMousePosition();
 
   // Mouse Move
 
