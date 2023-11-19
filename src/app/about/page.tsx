@@ -7,7 +7,6 @@ type Props = {};
 
 export default function Page({}: Props) {
   const [isSmallScreen, setIsSmallScreen] = useState(true);
-  const mousePosition = useMousePosition();
 
   useEffect(() => {
     if (window.innerWidth > 1280) {
@@ -20,7 +19,7 @@ export default function Page({}: Props) {
       <div className="flex min-h-screen w-full items-center justify-center bg-white text-2xl">
         About page (customized based on your needs)
       </div>
-      {isSmallScreen ? null : <CustomCursor mousePosition={mousePosition} />}
+      {isSmallScreen ? null : <CustomCursor />}
     </>
   );
 }

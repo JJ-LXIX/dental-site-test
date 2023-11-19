@@ -9,14 +9,12 @@ import { ReactLenis } from "@studio-freight/react-lenis";
 import CustomCursor from "../../components/CustomCursor/CustomCursor";
 import TestimonialSection from "../../components/TestimonialSection/TestimonialSection";
 import useDimension from "@/lib/hooks/useDimension";
-import useMousePosition from "@/lib/hooks/useMousePosition";
 import TeamSection from "../../components/TeamSection/TeamSection";
 import SmallScreenTestimonial from "../../components/TestimonialSection/SmallScreenTestimonial";
 
 export default function Home() {
   const { isMobile, isSmallScreen } = useDimension();
   const [clickable, setClickable] = useState(false);
-  const mousePosition = useMousePosition();
 
   return (
     <main className="w-full">
@@ -24,7 +22,6 @@ export default function Home() {
         <HeroSection2 isSmallScreen={isSmallScreen} />
         <WhyUsSection isMobile={isMobile} />
         <ServiceSection
-          mousePosition={mousePosition}
           isSmallScreen={isSmallScreen}
           setClickable={setClickable}
         />
@@ -32,9 +29,7 @@ export default function Home() {
         <FaqSection isMobile={isMobile} setClickable={setClickable} />
         {isSmallScreen ? <SmallScreenTestimonial /> : <TestimonialSection />}
         <ContactFormSection />
-        {isSmallScreen ? null : (
-          <CustomCursor mousePosition={mousePosition} clickable={clickable} />
-        )}
+        {isSmallScreen ? null : <CustomCursor clickable={clickable} />}
       </ReactLenis>
     </main>
   );
