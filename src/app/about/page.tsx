@@ -2,17 +2,12 @@
 import React, { useEffect, useState } from "react";
 import CustomCursor from "../../../components/CustomCursor/CustomCursor";
 import useMousePosition from "@/lib/hooks/useMousePosition";
+import useDimension from "@/lib/hooks/useDimension";
 
 type Props = {};
 
 export default function Page({}: Props) {
-  const [isSmallScreen, setIsSmallScreen] = useState(true);
-
-  useEffect(() => {
-    if (window.innerWidth > 1280) {
-      setIsSmallScreen(false);
-    } else setIsSmallScreen(true);
-  }, []);
+  const { isMobile, isSmallScreen } = useDimension();
 
   return (
     <>
