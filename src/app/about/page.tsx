@@ -1,7 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import CustomCursor from "../../../components/CustomCursor/CustomCursor";
-import useMousePosition from "@/lib/hooks/useMousePosition";
 import useDimension from "@/lib/hooks/useDimension";
 
 type Props = {};
