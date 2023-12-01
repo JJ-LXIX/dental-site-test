@@ -1,7 +1,6 @@
-import dynamic from "next/dynamic";
 import FormComponent from "./FormComponent";
 import MapComponent from "./MapComponent";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Map } from "lucide-react";
 // import dynamic from "next/dynamic";
 // const MapComponent = dynamic(() => import("./MapComponent"));
 
@@ -23,8 +22,8 @@ function ContactFormSection({}: Props) {
               {`(+1)123456789`}
             </h3>
             <h3 className="flex w-full items-center font-semibold md:text-base">
-              <Mail className="h-full pr-2 font-bold text-black" />
-              yourEmail@gmail.com
+              <Map className="h-full pr-2 font-bold text-black" />
+              City, State
             </h3>
           </div>
 
