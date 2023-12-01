@@ -26,7 +26,7 @@ export default function HeroSection2({ isSmallScreen }: Props) {
           <Image
             src={DentalOfficeHero}
             fill
-            priority={true}
+            priority
             alt="Image of our Dental Office"
             style={{ objectFit: "cover" }}
             sizes="100vw"
