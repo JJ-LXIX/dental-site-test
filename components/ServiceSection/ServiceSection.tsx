@@ -131,12 +131,12 @@ export default function ServiceSection({ isSmallScreen, setClickable }: Props) {
                   transition={{ duration: 0.1 }}
                   animate={{
                     opacity: 1,
-                    x: mousePosition.x - 300,
-                    y: mousePosition.y - 400,
+                    x: mousePosition.x - 400,
+                    y: mousePosition.y - 300,
                     rotateZ: (mousePosition.x - 700) * 0.04,
                   }}
                   exit={{ opacity: 0 }}
-                  className="absolute top-0 h-3/6 w-2/6 self-center 3xl:h-5/6 3xl:w-4/6 4xl:w-3/6"
+                  className="absolute top-0 h-3/6 w-2/6 self-center"
                 >
                   <Image
                     src={serviceImage}
