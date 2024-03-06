@@ -1,6 +1,5 @@
 import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import dentistPatient from "../../public/images/woman-dentist-patient.jpg";
-import healthCareWorker from "../../public/images/Healthcare_worker.png";
 import Veeners from "../../public/images/veneers.jpg";
 import Invisalign from "../../public/images/invisalign.jpg";
 import OralSurgery from "../../public/images/oral-surgery.jpg";
