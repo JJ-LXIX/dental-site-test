@@ -35,9 +35,9 @@ function SmallScreenTestimonial({}: Props) {
           return (
             <div
               key={review.name}
-              className="h-[40vh] w-3/4 overflow-hidden rounded-2xl bg-zinc-100 p-5 md:h-[25vh] md:w-[30%]"
+              className="w-3/4 overflow-hidden rounded-2xl bg-zinc-100 p-5 py-8 md:h-[25vh] md:w-[30%]"
             >
-              <div className="flex h-full w-full flex-col">
+              <div className="flex h-full w-full flex-col space-y-5">
                 {/* Review Text */}
                 <div className="flex h-4/6 w-full items-center p-2 ">
                   "{review.review}"

@@ -26,13 +26,13 @@ export default function Column({ reviews, y }: Props) {
           >
             <div className="flex h-full w-full flex-col">
               {/* Review Text */}
-              <div className="flex h-4/6 w-full items-center p-2 text-center text-2xl xl:px-4 xl:text-3xl">
+              <div className="flex h-4/6 w-full items-center p-2 text-center text-2xl xl:px-4 2xl:text-3xl">
                 "{review.review}"
               </div>
               {/* Image and Name */}
               <div className="flex h-3/6 w-full flex-col items-center justify-center space-y-4">
                 <div className="flex h-full w-full items-center justify-center">
-                  <div className="relative h-36 w-36 overflow-hidden rounded-full bg-black">
+                  <div className="relative overflow-hidden rounded-full bg-black xl:h-20 xl:w-20 2xl:h-36 2xl:w-36">
                     <Image
                       src={review.image}
                       alt="image of person smiling with nice teeth"
