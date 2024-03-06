@@ -118,7 +118,9 @@ export default function ServiceSection({ isSmallScreen, setClickable }: Props) {
                   className="relative flex h-full w-full items-center justify-between border-b-2  border-zinc-200 text-xl text-white"
                 >
                   {service.name}
-                  <div className="text-base text-white">{service.text}</div>
+                  <div className="text-pretty text-end text-base text-white lg:max-w-[60%]">
+                    <p>{service.text}</p>
+                  </div>
                 </div>
               );
             })}
